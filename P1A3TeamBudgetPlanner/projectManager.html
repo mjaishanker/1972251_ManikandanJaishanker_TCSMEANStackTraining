@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Managers</title>
+    <h2>Add New Budget</h2>
+    <script src="teamBudgetPlanner.js"></script>
+    <link rel="stylesheet" href="teamBudgetPlanner.css">
+</head>
+<body onload="onPageLoad()">
+    <form>
+        Client Name: <input type="text" name="ClientName" id="clientName"/><br/>
+        Project Name: <input type="text" name="ProjectName" id="projectName"/><br/>
+        Budget: <input type="number" name="Budget" id="budget"/><br/>
+        <div class="buttons">
+            <input type="button" value="Add" name="ProjectAddButton" id="projectAddButton" class="projectAddButton" onclick="addProjectBudget()"/>
+            <input type="reset" name="ResetTextField" id="resetTextField" class="resetTextField"/>
+        </div>
+    </form>
+    <a href="mainPage.html">Back</a>
+</body>
+</html>

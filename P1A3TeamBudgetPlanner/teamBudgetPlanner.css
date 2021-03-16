@@ -1,0 +1,75 @@
+a{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.homePageLinks a{
+    text-align:center;
+    border: 10px;
+    border-style: groove;
+    border-color: aqua;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    color: chocolate;
+
+}
+
+form{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    margin: 20px;
+}
+
+input{
+    padding: 5px;
+    margin: 5px;
+}
+
+.buttons input{
+    text-align: center;
+    padding: 5px;
+    margin-left: 50px;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* .clientTable{
+    border: 10px;
+    border-style: groove;
+    border-color: aqua;
+    margin: 20px;
+}
+
+tbody{
+    border: 5px;
+    border-style: groove;
+    border-color: aqua;
+} */
+
+thead{
+    background-color: rgb(28, 119, 223);
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: rgb(112, 165, 226);
+    padding: 10px;
+}
+tr:nth-child(odd) {
+    background: rgb(158, 191, 230);
+    padding: 10px;
+}
