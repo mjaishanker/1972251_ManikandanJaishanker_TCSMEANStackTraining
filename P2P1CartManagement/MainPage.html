@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="MainPage.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="MainPage.js"></script>
+    <title>Shopping Cart</title>
+</head>
+<body onload="onLoadCartSession()">
+    <div class="container">
+        <h2 id="pageTitle">Shopping Cart</h2>
+        <div class="container-fluid" id="navBar">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                <a href="CheckOut.html" class="nav-link" id="navContents"> Checkout</a>
+                </li>
+            </ul>
+        </div>
+        <h4 id="cartSizeText">Cart Size: <label for="other" id="cartSize">Other</label></h4>
+        <div class="row" id="row_1">
+            <div class="col" id="items">
+                <div class="itemNamePre">Name: </div>
+                <div class="itemNamePost">Laptop</div><br>
+                <div class="itemPricePre">Price:</div>
+                <div class="itemPriceDoll">$</div>
+                <div class="itemPricePost">100</div><br>
+                <input type="button" name="AddButton" id="addButton" value="Add" class="btn btn-link" onclick="onAddItem(this.parentElement.childNodes[3], this.parentElement.childNodes[10], document.getElementById('cartSize'))">
+            </div>
+            <div class="col" id="items">
+                <div class="itemNamePre">Name: </div>
+                <div class="itemNamePost">Headset</div><br>
+                <div class="itemPricePre">Price:</div>
+                <div class="itemPriceDoll">$</div>
+                <div class="itemPricePost">200</div><br>
+                <input type="button" name="AddButton" id="addButton" value="Add" class="btn btn-link" onclick="onAddItem(this.parentElement.childNodes[3], this.parentElement.childNodes[10], document.getElementById('cartSize'))">
+             </div>
+             <div class="col" id="items">
+                <div class="itemNamePre">Name: </div>
+                <div class="itemNamePost">Sofa</div><br>
+                <div class="itemPricePre">Price:</div>
+                <div class="itemPriceDoll">$</div>
+                <div class="itemPricePost">300</div><br>
+                <input type="button" name="AddButton" id="addButton" value="Add" class="btn btn-link" onclick="onAddItem(this.parentElement.childNodes[3], this.parentElement.childNodes[10], document.getElementById('cartSize'))">
+             </div>
+        </div>
+        <div class="row" id="row_2">
+            <div class="col" id="items">
+                <div class="itemNamePre">Name: </div>
+                <div class="itemNamePost">Solar Panels</div><br>
+                <div class="itemPricePre">Price:</div>
+                <div class="itemPriceDoll">$</div>
+                <div class="itemPricePost">400</div><br>
+                <input type="button" name="AddButton" id="addButton" value="Add" class="btn btn-link" onclick="onAddItem(this.parentElement.childNodes[3], this.parentElement.childNodes[10], document.getElementById('cartSize'))">
+            </div>
+            <div class="col" id="items">
+                <div class="itemNamePre">Name: </div>
+                <div class="itemNamePost">Washing Machine</div><br>
+                <div class="itemPricePre">Price:</div>
+                <div class="itemPriceDoll">$</div>
+                <div class="itemPricePost">500</div><br>
+                <input type="button" name="AddButton" id="addButton" value="Add" class="btn btn-link" onclick="onAddItem(this.parentElement.childNodes[3], this.parentElement.childNodes[10], document.getElementById('cartSize'))">
+            </div>
+            <div class="col" id="items">
+                <div class="itemNamePre">Name: </div>
+                <div class="itemNamePost">Phone</div><br>
+                <div class="itemPricePre">Price:</div>
+                <div class="itemPriceDoll">$</div>
+                <div class="itemPricePost">600</div><br>
+                <input type="button" name="AddButton" id="addButton" value="Add" class="btn btn-link" onclick="onAddItem(this.parentElement.childNodes[3], this.parentElement.childNodes[10], document.getElementById('cartSize'))">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

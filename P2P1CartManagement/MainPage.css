@@ -1,0 +1,58 @@
+#items{
+    border: 5px;
+    border-style: groove;
+    border-color: black;
+    background-color: aqua;
+    font-family: cursive;
+    text-align: center;
+    font-size: 20px;
+}
+
+.itemNamePre {display:inline-block;margin-right:10px;} 
+.itemNamePost {display:inline-block;}
+
+.itemPricePre {display:inline-block;margin-right:16px;} 
+.itemPricePost {display:inline-block;}
+.itemPriceDoll {display:inline-block;} 
+
+#totPricePre {
+    display:inline-block;
+    margin-right:16px; 
+    font-family: cursive;
+    text-align: center;
+    font-size: 20px;
+}
+
+#totalCartPrice {
+    display:inline-block;
+    font-family: cursive;
+    text-align: center;
+    font-size: 20px;
+} 
+
+#pageTitle{
+    font-family: cursive;
+    text-align: center;
+}
+
+#navContents{
+    font-family: cursive;
+    font-size: 20px;
+}
+
+#cartSizeText{
+    font-family: cursive;
+    font-size: 20px;
+}
+
+#cartSize{
+    font-family: cursive;
+    font-size: 20px;
+}
+
+#cartDetails{
+    font-size: 10px;
+    font-family: cursive;
+    text-align: center;
+    font-size: 20px;
+}
