@@ -1,0 +1,35 @@
+<div>
+    <h2>Login Form</h2>
+    <!-- <form [formGroup]="signInInfo" (ngSubmit)="logInUser()">
+        <label>Username</label>
+        <input type="text" formControlName = "user"/><br/>
+        <label>Password</label>
+        <input type="password" formControlName = "pass"/><br>
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Reset"/>
+    </form>
+    <br/>
+    <div>
+        <input type="button" value="Sign Up" (click)="signUpPage()"/>
+    </div> -->
+
+    <form [formGroup]="signInInfo" (ngSubmit)="logInUser()" id="logInDetails">
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationDefault01">Username</label>
+                <input type="text" class="form-control" id="validationDefault01" formControlName = "user" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationDefault02">Password</label>
+                <input type="text" class="form-control"  formControlName = "pass" id="validationDefault02" required>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn btn-primary" type="reset">Reset</button>
+    </form>
+    <br>
+    <div>
+        <input type="button" value="Sign Up" (click)="signUpPage()" class="btn btn-primary col-2"/>
+    </div>
+    <router-outlet></router-outlet>
+</div>

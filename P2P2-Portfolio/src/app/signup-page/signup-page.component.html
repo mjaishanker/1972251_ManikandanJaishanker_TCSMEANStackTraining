@@ -1,0 +1,43 @@
+<div>
+    <h2>Sign Up Form</h2>
+    <!-- <form [formGroup]="signUpRef" (ngSubmit)="signUpUser()">
+        <label>First Name</label>
+        <input type="text" formControlName = "firstname"/><br/>
+        <label>Last Name</label>
+        <input type="text" formControlName = "lastname"/><br/>
+        <label>Username</label>
+        <input type="text" formControlName = "uname"/><br>
+        <label>Password</label>
+        <input type="password" formControlName = "pword"/>
+        <input type="submit" value="Register"/>
+        <input type="reset" value="Reset"/>
+    </form> -->
+    <form [formGroup]="signUpRef" (ngSubmit)="signUpUser()" id="signUpDetails">
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="validationDefault01">First Name</label>
+                <input type="text" class="form-control" id="validationDefault01" formControlName = "firstname" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationDefault02">Last Name</label>
+                <input type="text" class="form-control" formControlName = "lastname" id="validationDefault02" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationDefault01">Username</label>
+                <input type="text" class="form-control" id="validationDefault01" formControlName = "uname" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationDefault02">Password</label>
+                <input type="text" class="form-control" formControlName = "pword" id="validationDefault02" required>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn btn-primary" type="reset">Reset</button>
+    </form>
+    <br/>
+    <div>
+        <input type="button" value="Log In" (click)="loginPage()" class="btn btn-primary col-2"/>
+    </div>
+    <router-outlet></router-outlet>
+</div>
+
