@@ -1,0 +1,20 @@
+<div>
+    <h3>Online Test</h3>
+
+    <form #quesRef="ngForm" (ngSubmit)="storeQuesVals(quesRef.value); quesRef.reset()" id="QnADetails" class="form-group">
+        <ol *ngFor="let qna of questionsnanswers">
+            <label class="form-check-label">{{qna.ques}}</label>
+            <br>
+            <div id="optionsField">
+                <label class="form-check-label"><input class="form-check-input" type="radio" name="options{{qna.Id}}" id="radButton1" (change)="radioChangeHandler($event)" value={{qna.ans1}} ngModel> {{qna.ans1}} </label>
+                <br>
+                <label class="form-check-label"><input class="form-check-input" type="radio" name="options{{qna.Id}}" id="radButton2" (change)="radioChangeHandler($event)" value={{qna.ans2}} ngModel> {{qna.ans2}} </label>
+                <br>
+                <label class="form-check-label"><input class="form-check-input" type="radio" name="options{{qna.Id}}" id="radButton3" (change)="radioChangeHandler($event)" value={{qna.ans3}} ngModel> {{qna.ans3}} </label>
+                <br>
+                <label class="form-check-label"><input class="form-check-input" type="radio" name="options{{qna.Id}}" id="radButton4" (change)="radioChangeHandler($event)" value={{qna.ans4}} ngModel> {{qna.ans4}} </label>
+            </div>
+            </ol> 
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

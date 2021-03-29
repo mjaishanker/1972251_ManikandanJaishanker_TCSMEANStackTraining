@@ -1,0 +1,19 @@
+#optionsField{
+    justify-content: space-between;
+}
+
+.form-group{
+    background-color: aqua;
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.btn btn-primary{
+    size: 15px;
+    align-content: center;
+}
+
+h3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}

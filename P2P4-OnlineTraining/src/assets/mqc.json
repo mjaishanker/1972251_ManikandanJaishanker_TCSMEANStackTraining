@@ -1,0 +1,12 @@
+[
+    {"Id": 1, "ques": "What is Earth's largest continent?", "ans1": "Europe", "ans2": "Africa", "ans3": "Asia", "ans4": "Antartica", "correctAnswer": "Asia"},
+    {"Id": 2, "ques": "What is the only sea without any coasts?", "ans1": "Sargasso Sea", "ans2": "Adriatic Sea", "ans3": "Celebes Sea", "ans4": "Mediterranean Sea", "correctAnswer": "Sargasso Sea"},
+    {"Id": 3, "ques": "Ōkunoshima is an island off of Japan that’s completely overrun with", "ans1": "Dogs", "ans2": "Cats", "ans3": "Seals", "ans4": "Rabbits", "correctAnswer": "Rabbits"},
+    {"Id": 4, "ques": "What is outlawed in Hawaii?", "ans1": "Hair Spray", "ans2": "Grills", "ans3": "Billboards", "ans4": "Flash Mobs", "correctAnswer": "Billboards"},
+    {"Id": 5, "ques": "The black swan in Swan Lake is called", "ans1": "Odile", "ans2": "Giselle", "ans3": "Ulyana", "ans4": "Odette", "correctAnswer": "Odile"},
+    {"Id": 6, "ques": "Which of these U.S. states does NOT border Canada?", "ans1": "Minnesota", "ans2": "Maine", "ans3": "Indiana", "ans4": "Alaska", "correctAnswer": "Indiana"},
+    {"Id": 7, "ques": "Which of these things is NOT located in Africa?", "ans1": "Gobi Desert", "ans2": "Lake Victoria", "ans3": "Aswan Dam", "ans4": "Zambezi River", "correctAnswer": "Gobi Desert"},
+    {"Id": 8, "ques": "What is Andromeda?", "ans1": "Telescope", "ans2": "Bacteria", "ans3": "Element", "ans4": "Galaxy", "correctAnswer": "Galaxy"},
+    {"Id": 9, "ques": "Which of the following was NOT originally invented in China?", "ans1": "Gunpowder", "ans2": "Concrete", "ans3": "Paper Money", "ans4": "Silk", "correctAnswer": "Concrete"},
+    {"Id": 10, "ques": "The spinning jenny was one of the earliest innovations in the Industrial Revolution. What was a spinning jenny?", "ans1": "Cloth Maker", "ans2": "Energy Storage", "ans3": "Water Pump", "ans4": "Steam Engine", "correctAnswer": "Cloth Maker"}
+]
