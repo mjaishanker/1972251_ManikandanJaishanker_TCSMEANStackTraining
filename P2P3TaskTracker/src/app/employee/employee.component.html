@@ -1,0 +1,67 @@
+<div id="infoGetField">
+    <h2>Add Employee Details</h2>
+    <form #empRef="ngForm" (ngSubmit)="storeUser(empRef.value)" id="formField">
+        <mat-form-field>
+            <mat-label style="color: black;">Id</mat-label>
+            <input matInput type="text" style="background-color: peachpuff" name="id" ngModel>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label style="color: black;">Name</mat-label>
+            <input matInput type="text" style="background-color: peachpuff" name="name" ngModel>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label style="color: black;">Task</mat-label>
+            <input matInput type="text" style="background-color: peachpuff" name="task" ngModel>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label style="color: black;">Deadline</mat-label>
+            <input matInput type="text" style="background-color: peachpuff" name="deadline" ngModel>
+        </mat-form-field>
+        <br>
+        <button id="subButton" mat-stroked-button color="primary" style="background-color: aquamarine;" type="submit">Store</button>
+        <button id="resButton" mat-stroked-button color="primary" style="background-color: aquamarine;" type="reset">Reset</button>
+    </form>
+    <br>
+    <hr>
+    <table mat-table class="mat-elevation-z8">
+        <thead>
+            <tr color="primary">
+                <ng-container matColumnDef="position">
+                    <th scope="col" color="primary">ID</th>
+                </ng-container>
+                <ng-container matColumnDef="position">
+                    <th scope="col">Name</th>
+                </ng-container>
+                <ng-container matColumnDef="position">
+                    <th scope="col">Task</th>
+                </ng-container>
+                <ng-container matColumnDef="position">
+                    <th scope="col">Deadline</th>
+                </ng-container>   
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let tasks of empTasksTrack">
+                <ng-container matColumnDef="position">
+                    <td mat-cell>{{tasks.id}}</td>
+                </ng-container>
+                <ng-container matColumnDef="position">
+                    <td mat-cell>{{tasks.name}}</td>
+                </ng-container>
+                <ng-container matColumnDef="position">
+                    <td mat-cell>{{tasks.task}}</td>
+                </ng-container>
+                <ng-container matColumnDef="position">
+                    <td mat-cell>{{tasks.deadline}}</td>
+                </ng-container>
+                <!-- <td>{{tasks.id}}</td>
+                <td>{{tasks.name}}</td>
+                <td>{{tasks.task}}</td>
+                <td>{{tasks.deadline}}</td> -->
+              </tr>
+        </tbody>
+    </table>
+</div>
